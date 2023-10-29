@@ -269,11 +269,11 @@ public class EvilHangman
 
             Map<String, Set<String>> allFamiliesToWords = reverseWordsAndFamilies(allWordsToFamilies);
 
-            String bestFamliy = chooseBestFamily(allFamiliesToWords);
+            String bestFamily = chooseBestFamily(allFamiliesToWords);
 
-            validWords = getWordsFromFamily(allFamiliesToWords, bestFamliy);
+            validWords = getWordsFromFamily(allFamiliesToWords, bestFamily);
 
-            cumulativeFamily = combineFamilies(cumulativeFamily, bestFamliy);
+            cumulativeFamily = combineFamilies(cumulativeFamily, bestFamily);
 
             gameWon = checkVictory(cumulativeFamily);
 
